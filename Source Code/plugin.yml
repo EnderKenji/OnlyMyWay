@@ -11,3 +11,7 @@ api:
 - 1.4.0
 - 2.8.0
 - 2.0.0
+
+permissions:
+  onlymyway.join:
+    default: op
