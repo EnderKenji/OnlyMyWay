@@ -20,11 +20,11 @@ class OnlyMyWay extends PluginBase implements Listener {
 	}
 	public function onKick(PlayerKickEvent $event) {
            $player = $event->getPlayer();
-		if ($event->getReason () === "disconnectionScreen.serverFull")
+		if ($event->getReason () === "disconnectionScreen.serverFull"){
 			if ($player->isOp());
-                        if ($player->hasPermission(onlymyway.join"));
-
-                          $event->setCancelled(true);
+                        if ($player->hasPermission("onlymyway.join"));
+                        $event->setCancelled();
+		}
 }
 
 ?>
